@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/leo/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,11 +45,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(atom common-aliases debian django git pip python ssh-agent sudo systemd tmux vagrant virtualenvwrapper zsh-syntax-highlighting)
+plugins=(atom common-aliases debian docker docker-compose git pip python ssh-agent sudo systemd tmux vagrant virtualenvwrapper zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,6 +78,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export EDITOR=vim
-#source ~/ownCloud/nikola/make_it_so/_nikola_zsh
+EDITOR=vim
+#export WORKON_HOME=~/Envs
 alias tmux="tmux -2"
+zstyle :omz:plugins:ssh-agent identities id_rsa id_github_bitson
+#fpath=(~/.zsh/completion $fpath)
+#autoload -Uz compinit && compinit -i
+alias mkvenv3="mkvirtualenv -p $(which python3)"
