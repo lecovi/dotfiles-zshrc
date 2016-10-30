@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(atom common-aliases debian docker docker-compose git pip python ssh-agent sudo systemd tmux vagrant virtualenvwrapper zsh-syntax-highlighting)
+plugins=(atom celery common-aliases debian docker docker-compose git git-flow pip python ssh-agent sudo supervisor systemd tmux vagrant virtualenvwrapper zsh-syntax-highlighting)
 
 # User configuration
 
