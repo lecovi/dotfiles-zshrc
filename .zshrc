@@ -85,3 +85,5 @@ zstyle :omz:plugins:ssh-agent identities id_rsa id_github_bitson
 #fpath=(~/.zsh/completion $fpath)
 #autoload -Uz compinit && compinit -i
 alias mkvenv3="mkvirtualenv -p $(which python3)"
+alias gpa="gp --all"
+alias gla="gl --all"
