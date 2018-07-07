@@ -49,7 +49,7 @@ plugins=(atom celery common-aliases debian docker docker-compose git git-flow pi
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$HOME/.local/bin:/sbin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -87,3 +87,7 @@ zstyle :omz:plugins:ssh-agent identities id_rsa id_github_bitson
 alias mkvenv3="mkvirtualenv -p $(which python3)"
 alias gpa="gp --all"
 alias gla="gl --all"
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
+export TERMINAL=/usr/bin/terminator
+alias python="/usr/bin/python3"
+alias python2="/usr/bin/python2"
